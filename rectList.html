@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="style.css">
+            
+    </head>
+<body>
+
+<bold>Number of Rectangles:</bold>  
+<form>
+    <input type="number" name="recCount" id="rec" onblur="RecCount()" >
+    <br>
+<h2><bold>Rectangles</bold></h2><br>
+</form>
+
+<div>
+<canvas id="canvas" width="1000" height="400"></canvas><br>
+</div>
+
+
+
+<button type="button" onclick="Rectangle()">AddRectangle</button>
+
+<script  type="text/javascript" src="recCount.js"> </script> 
+<button onclick="deleteRectangle()">Delete Rectangle</button><br>
+<p>Note:To delete the last generated Rectangle, click on delete button</p>
+<p>to edit the properties of rectangle, i.e height and width of rectangle click on edit properties</p>
+<button onclick="editFunction()">EDIT</button>
+<p>Confirm the change in property of Rectangle</p>
+<button onclick="editProp()">Save Change</button>
+<br>
+
+
+<div id="myDIV" class="toshow">
+Width:<input type="text" id="width" value="150"><br>
+Height:<input type="text" id="height" value="100">
+</div>
+
+</body>
+
+</html>
